@@ -32,20 +32,26 @@ footer {
 body {
   background-color: #ffffff;
   font-family: "Trebuchet MS";
-  font-size: 32px;
+  font-size: 20px;
 }
 a {
   text-decoration: none;
   color: currentColor;
 }
 
-p {
-  font-size: 20px;
-}
 
 p.info {
   margin-right: 50px;
   margin-left: 50px;
+}
+
+table#projects {
+  width: 100%;
+}
+
+td#project {
+  text-align: center;
+  width: 75%;
 }
 
 td.header {
