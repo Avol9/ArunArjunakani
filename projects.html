@@ -8,22 +8,38 @@
   <header>
     <table class="header">
       <tr>
-        <td class="header"><a href="index.html">Home</a></td>
-        <td class="header"><a href="aboutme.html">About me</a></td>
-        <td class="header"><a href="projects.html">Projects</a></td>
-        <td class="header"><a href="blog.html">Blog</a></td>
-        <td class="header"><a href="Resume.pdf">Resume</a></td>
+        <td class="header"><a id="menu" href="index.html">Home</a></td>
+        <td class="header"><a id="menu" href="aboutme.html">About me</a></td>
+        <td class="header"><a id="menu" href="projects.html">Projects</a></td>
+        <td class="header"><a id="menu" href="blog.html">Blog</a></td>
+        <td class="header"><a id="menu" href="Resume.pdf">Resume</a></td>
       </tr>
     </table>
   </header>
   <br></br>
   <table id="projects">
     <tr id="project">
-      <td id="projectIcon"></td>
+      <td id="projectIcon">
+        <a href="https://github.com/arunarjunakani/HexagonalGameOfLife"><img src=Logo.png alt="Hexagonal Game of Life Logo" style="height: 150px"></img><a>
+      </td>
       <td id="project">
         <h3>
           Hexagonal Game of Life
         </h3>
+        <p>
+          This is an implementation of hexagonal version of <a href="https://bitstorm.org/gameoflife/">Conway's Game of Life<a>.
+           Rather than have a grid of squares, this version uses a grid of hexagons.
+           We had to slightly modify the rules to deal with the fact that there are six
+           sides, rather than just four. Unlike cubes, which have 2 different axes (up and down and right and left),
+           the hexagons have 3 different axes. This has benefits and consequences. Having
+           3 axes allows for interesting new elements such as rotation that aren't
+           seen in the original version. However, one of the consequences it is cannot
+           easily be implemented in a two dimensional array. In the github repository, there are demo files of notable
+           patterns we found. This was built for Purdue's Hello World Hackathon.
+           <br>
+           <br>
+           Website: <a href="https://arunarjunakani.github.io/HexagonalGameOfLife/">Hexagonal Game of Life<a>
+        </p>
       </td>
     </tr>
   </table>
@@ -31,7 +47,7 @@
     <table class="footer">
       <tr>
         <td class="footer"><a href="https://www.linkedin.com/in/arun-arjunakani-39037493"><img src="LinkedInLogo.png" alt="Arun's LinkedIn Account"></a></td>
-        <td class="footer"><a href="https://github.com/Avol9"><img src="GitHubLogo.png" alt="Arun's GitHub Account"></a></td>
+        <td class="footer"><a href="https://github.com/arunarjunakani"><img src="GitHubLogo.png" alt="Arun's GitHub Account"></a></td>
         <td class="footer"><a href="mailto:arunarjunakani@gmail.com"><img src="MailLogo.png" alt="Send an e-mail to Arun" style="width:32px;height:32px;"></a></td>
       </tr>
     </table>
