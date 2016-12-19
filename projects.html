@@ -26,20 +26,35 @@
     <table id="projects">
         <tr id="project">
             <td id="projectIcon">
-                <a href="https://github.com/arunarjunakani/HexagonalGameOfLife"><img src=Logo.png alt="Hexagonal Game of Life Logo" style="height: 150px"></img>
-                    <a>
+                <a href="https://github.com/arunarjunakani/ArloperAlgorithm"><img src=traveling-salesman-R.gif alt="Arloper's Algorithm Logo" style="height: 150px"></img>
+                </a>
             </td>
             <td id="project">
-                <h3>
-          Hexagonal Game of Life - 2016
-        </h3>
+                <h3>Arloper's Algorithm - 2016</h3>
+                <p>
+                    This is the implementation of a simple heuristic algorithm for the <a href="https://en.wikipedia.org/wiki/Travelling_salesman_problem">Travelling Salesman Problem (TSP)</a>. The TSP involves a a salesman who starts at city and wants to visit n different cities before returning to his home town. He wants to find the optimal
+                    path through so that he spends the least amount of time travelling. We can represent this abstractly as an undirected weighted cycle. The only true solution to this problem, however, is to to use exhaustive search and identify every
+                    single possible cycle, which has a running time of O(n!) which isn't exactly ideal. The TSP is a NP-complete problem. This project is the implementation of Arloper's Algorithm, a heuristic that runs in on average O(nlog(n)) with worst
+                    case O(n^2) running time.
+                    <br>
+                    <br> Tools: Java and JavaFX
+                </p>
+            </td>
+        </tr>
+        <tr id="project">
+            <td id="projectIcon">
+                <a href="https://github.com/arunarjunakani/HexagonalGameOfLife"><img src=Logo.png alt="Hexagonal Game of Life Logo" style="height: 150px"></img>
+                </a>
+            </td>
+            <td id="project">
+                <h3>Hexagonal Game of Life - 2016</h3>
                 <p>This is an implementation of hexagonal version of <a href="https://bitstorm.org/gameoflife/">Conway's Game of Life</a>. Rather than have a grid of squares, this version uses a grid of hexagons. We had to slightly modify the rules to deal
                     with the fact that there are six sides, rather than just four. Unlike cubes, which have 2 different axes (up and down and right and left), the hexagons have 3 different axes. This has benefits and consequences. Having 3 axes allows
                     for interesting new elements such as rotation that aren't seen in the original version. However, one of the consequences it is cannot easily be implemented in a two dimensional array. In the github repository, there are demo files
                     of notable patterns we found. This was built for Purdue's Hello World Hackathon.
                     <br>
                     <br> Website: <a href="https://arunarjunakani.github.io/HexagonalGameOfLife/">Hexagonal Game of Life</a>
-                    <br> Built with HTML, CSS, and JavaScript.
+                    <br> Tools: HTML, CSS, and JavaScript.
                 </p>
             </td>
         </tr>
@@ -55,13 +70,15 @@
                     to add them to the build and see how the stats are changing. To remove an item, simply click on it in the build section.
                     <br>
                     <br> Website: <a href="https://arunarjunakani.github.io/ChampionBuilder/">Champion Builder</a>
-                    <br> Built with HTML5, CSS, and AngularJS.
+                    <br> Tools: HTML5, CSS, and AngularJS.
                 </p>
             </td>
         </tr>
     </table>
 </div>
 <div class="col-sm-1"></div>
+<div class="col-sm-12"><br><br></div>
+
 <footer>
     <table class="footer">
         <tr>
