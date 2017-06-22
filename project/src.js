@@ -1,10 +1,20 @@
-var buttons = document.querySelectorAll('.btn');
-buttons.forEach( function( btn ) {
-   btn.addEventListener('click', function(event) {
-      ga('send', 'event', {
+function click()
+{
+	ga('send', 'event', {
          eventAction: 'click',
          eventCategory: 'Buy Now Buttons',
          eventLabel: 'Buy Now'
       });
-   });
-} );
+	console.log("Hello!");
+}
+
+// var buttons = document.querySelectorAll('.btn');
+// buttons.forEach( function( btn ) {
+//    btn.addEventListener('click', function(event) {
+//       ga('send', 'event', {
+//          eventAction: 'click',
+//          eventCategory: 'Buy Now Buttons',
+//          eventLabel: 'Buy Now'
+//       });
+//    });
+// } );

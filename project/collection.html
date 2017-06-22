@@ -1,7 +1,6 @@
 <html>
 	<head>
 		<title>Collection</title>
-		<script src="src.js"></script>
 		<script>
 		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -12,6 +11,8 @@
 		</script>
 	</head>
 	<body>
+		<script src="src.js"></script>
+
 		<img src="./ring.jpg" alt="Optione One" width="300 px">
 		<img src="./necklace.jpg" alt="Optione One" width="300 px">
 		<img src="./amulet.jpg" alt="Optione One" width="300 px">
@@ -21,9 +22,13 @@
 		<img src="./amulet.jpg" alt="Optione One" width="300 px">
 		<img src="./wrist.jpg" alt="Optione One" width="300 px">
 		<!-- The buy now button that appear above the fold -->
-<a class="btn" id="buy-now-above">Buy Now</a>
- 
-<!-- The buy now button that appear below the fold -->
-<a class="btn" id="buy-now-below">Buy Now</a>
+		<br>
+		<button onclick="trackClick()">Purchase Now</button>
+		<!-- <script>
+			function trackClick()
+			{
+				console.log("Hello!");
+			}
+		</script> -->
 	</body>
 </html>
