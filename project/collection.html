@@ -8,22 +8,33 @@
 			})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 			ga('create', 'UA-85801955-3', 'auto');
 			ga('send', 'pageview');
-
 		</script>
 	</head>
 	<body>
-		<img src="./ring.jpg" alt="Option One" width="300 px">
-		<img src="./necklace.jpg" alt="Option One" width="300 px">
-		<img src="./amulet.jpg" alt="Option One" width="300 px">
-		<img src="./wrist.jpg" alt="Option One" width="300 px">
-		<img src="./ring.jpg" alt="Option One" width="300 px">
-		<img src="./necklace.jpg" alt="Option One" width="300 px">
-		<img src="./amulet.jpg" alt="Option One" width="300 px">
-		<img src="./wrist.jpg" alt="Option One" width="300 px">
+		<img src="./ring.jpg" alt="Option One" width="300 px" onclick="ga('send', 'event', {
+	        eventAction: 'click',
+	        eventCategory: ' ',
+	        eventLabel: 'Click on ring'
+      		})">
+		<img src="./necklace.jpg" alt="Option Two" width="300 px" onclick="ga('send', 'event', {
+	        eventAction: 'click',
+	        eventCategory: ' ',
+	        eventLabel: 'Click on necklace one'
+      		})">
+      	<img src="./amulet.jpg" alt="Option Three" width="300 px" onclick="ga('send', 'event', {
+	        eventAction: 'click',
+	        eventCategory: ' ',
+	        eventLabel: 'Click on necklace two'
+      		})">
+      	<img src="./bracelet.jpg" alt="Option Four" width="300 px" onclick="ga('send', 'event', {
+	        eventAction: 'click',
+	        eventCategory: ' ',
+	        eventLabel: 'Click on bracelet'
+      		})">
 		<br>
 		<button onclick="ga('send', 'event', {
 	        eventAction: 'click',
-	        eventCategory: 'Buy Now Buttons',
+	        eventCategory: ' ',
 	        eventLabel: 'Buy Now'
       		})">Purchase Now</button>
 	</body>
