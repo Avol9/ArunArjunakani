@@ -9,11 +9,6 @@
 			ga('create', 'UA-85801955-3', 'auto');
 			ga('send', 'pageview');
 
-			ga('send', 'event', {
-	        eventAction: 'click',
-	        eventCategory: 'Buy Now Buttons',
-	        eventLabel: 'Buy Now'
-      });
 		</script>
 	</head>
 	<body>
@@ -26,6 +21,10 @@
 		<img src="./amulet.jpg" alt="Option One" width="300 px">
 		<img src="./wrist.jpg" alt="Option One" width="300 px">
 		<br>
-		<button onclick="trackClick()">Purchase Now</button>
+		<button onclick="a('send', 'event', {
+	        eventAction: 'click',
+	        eventCategory: 'Buy Now Buttons',
+	        eventLabel: 'Buy Now'
+      		})">Purchase Now</button>
 	</body>
 </html>
