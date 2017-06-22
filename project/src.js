@@ -1,4 +1,4 @@
-function click()
+function trackClick()
 {
 	ga('send', 'event', {
          eventAction: 'click',
