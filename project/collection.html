@@ -2,12 +2,18 @@
 	<head>
 		<title>Collection</title>
 		<script>
-		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-		  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-		  ga('create', 'UA-85801955-3', 'auto');
-		  ga('send', 'pageview');
+			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+			ga('create', 'UA-85801955-3', 'auto');
+			ga('send', 'pageview');
+
+			ga('send', 'event', {
+	        eventAction: 'click',
+	        eventCategory: 'Buy Now Buttons',
+	        eventLabel: 'Buy Now'
+      });
 		</script>
 	</head>
 	<body>
@@ -21,12 +27,5 @@
 		<img src="./wrist.jpg" alt="Option One" width="300 px">
 		<br>
 		<button onclick="trackClick()">Purchase Now</button>
-		<script src="src.js"></script>
-		<!-- <script>
-			function trackClick()
-			{
-				console.log("Hello!");
-			}
-		</script> -->
 	</body>
 </html>
