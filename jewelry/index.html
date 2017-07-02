@@ -10,32 +10,15 @@
 		})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 		ga('create', 'UA-85801955-3', 'auto');
 		ga('send', 'pageview');
-		
-		function clickItem(item) {
-			console.log("The " + item + " was clicked");
-			ga('send', 'event', {
-	       		eventAction: 'click on ' + item, 
-		        eventCategory: ' ',
-		        eventLabel: 'Click on ' + item
-      		});
-		}
-			function searchItem(item) {
-			console.log("The user searched for " + item);
-			ga('send', 'event', {
-	       		eventAction: 'search for ' + item, 
-		        eventCategory: ' ',
-		        eventLabel: 'Search for ' + item
-      		});
-		}
 
 		$(document).ready(function() {
 			var buttons = document.querySelectorAll('.btn');
 			buttons.forEach( function(btn) {
 				btn.addEventListener('click', function(event) {
-					console.log("A click has occured!");
+					console.log("A click on + " + btn.id + " has occured!");
 					ga('send', 'event', {
-				        eventAction: 'click on ' + btn,
-				        eventCategory: ' ',
+				        eventAction: 'click on ' + btn.id,
+				        eventCategory: 'click',
 				        eventLabel: event.target.id 
 				    });
 			    });
@@ -109,13 +92,13 @@
 				<h2>Last added products</h2>
 				<section class="products">
 					<article>
-						<img class = "btn" src="images/1.jpg" alt="">
+						<img class = "btn" src="images/1.jpg" id="Excepteur sint occaecat" alt="">
 						<h3>Excepteur sint occaecat</h3>
 						<h4>$1 850.00</h4>
 						<a href="cart.html" class="btn-add">Add to cart</a>
 					</article>
 					<article>
-						<img class = "btn" src="images/11.jpg" alt="">
+						<img class = "btn" src="images/11.jpg" id="Lorem ipsum dolor" alt="">
 						<h3>Lorem ipsum dolor</h3>
 						<h4>$990.00</h4>
 						<a href="cart.html" class="btn-add">Add to cart</a>
