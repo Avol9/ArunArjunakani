@@ -22,6 +22,15 @@
 				        eventLabel: event.target.id 
 				    });
 			    });
+
+			    btn.addEventListener('mouseenter', function(event) {
+					console.log("A hover on + " + btn.id + " has occured!");
+					ga('send', 'event', {
+				        eventAction: 'hover over on ' + btn.id,
+				        eventCategory: 'hover',
+				        eventLabel: event.target.id 
+				    });
+			    });
 			});
 		});
 	</script>
@@ -39,7 +48,7 @@
 			<a href="index.html" id="logo" title="Diana’s jewelry">Diana’s jewelry</a>
 			<div class="right-links">
 				<ul>
-					<li><a href="cart.html"><span class="ico-products"></span>3 products, $4 500.00</a></li>
+					<li><a href="cart.html"><span class="ico-products"></span>3 products, $4500.00</a></li>
 					<li><a href="#"><span class="ico-account"></span>Account</a></li>
 					<li><a href="#"><span class="ico-signout"></span>Sign out</a></li>
 				</ul>
@@ -94,7 +103,7 @@
 					<article>
 						<img class = "btn" id="Excepteur sint occaecat" src="images/1.jpg" alt="">
 						<h3>Excepteur sint occaecat</h3>
-						<h4>$1 850.00</h4>
+						<h4>$1850.00</h4>
 						<a href="cart.html" class="btn-add">Add to cart</a>
 					</article>
 					<article>
@@ -106,19 +115,19 @@
 					<article>
 						<img class = "btn" id="cupidatat non proident" src="images/12.jpg" alt="">
 						<h3>cupidatat non proident</h3>
-						<h4>$1 200.00</h4>
+						<h4>$1200.00</h4>
 						<a href="cart.html" class="btn-add">Add to cart</a>
 					</article>
 					<article>
 						<img class = "btn" id="Duis aute irure" src="images/13.jpg" alt="">
 						<h3>Duis aute irure</h3>
-	 					<h4>$2 650.00</h4>
+	 					<h4>$2650.00</h4>
 						<a href="cart.html" class="btn-add">Add to cart</a>
 					</article>
 					<article>
 						<img class = "btn" id="magna aliqua" src="images/14.jpg" alt="">
 						<h3>magna aliqua</h3>
-						<h4>$3 500.00</h4>
+						<h4>$3500.00</h4>
 						<a href="cart.html" class="btn-add">Add to cart</a>
 					</article>
 				</section>
