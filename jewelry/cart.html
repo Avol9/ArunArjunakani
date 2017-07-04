@@ -2,6 +2,29 @@
 <!--[if IE 8]> <html class="ie8 oldie" lang="en"> <![endif]-->
 <!--[if gt IE 8]><!--> <html lang="en"> <!--<![endif]-->
 <head>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+		ga('create', 'UA-85801955-3', 'auto');
+		ga('send', 'pageview');
+
+		$(document).ready(function() {
+			var buttons = document.querySelectorAll('.btn');
+			buttons.forEach( function(btn) {
+				btn.addEventListener('click', function(event) {
+					console.log("A click on + " + btn.id + " has occured!");
+					ga('send', 'event', {
+				        eventAction: 'click on ' + btn.id,
+				        eventCategory: 'click',
+				        eventLabel: event.target.id 
+				    });
+			    });
+			});
+		});
+	</script>
 	<meta charset="utf-8">
 	<title>Diana’s jewelry</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
@@ -17,7 +40,7 @@
 			<a href="index.html" id="logo" title="Diana’s jewelry">Diana’s jewelry</a>
 			<div class="right-links">
 				<ul>
-					<li><a href="cart.html"><span class="ico-products"></span>3 products, $4 500.00</a></li>
+					<li><a href="cart.html"><span class="ico-products"></span>3 products, $4500.00</a></li>
 					<li><a href="#"><span class="ico-account"></span>Account</a></li>
 					<li><a href="#"><span class="ico-signout"></span>Sign out</a></li>
 				</ul>
@@ -74,9 +97,9 @@
 								<h3><a href="#">Lorem ipsum dolor</a></h3>
 								<p>Dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi.</p>
 							</td>
-							<td class="price">$1 350.00</td>
+							<td class="price">$1350.00</td>
 							<td class="qnt"><select><option>1</option><option>1</option></select></td>
-							<td class="total">$1 350.00</td>
+							<td class="total">$1350.00</td>
 							<td class="delete"><a href="#" class="ico-del"></a></td>
 						</tr>
 						<tr>
@@ -87,9 +110,9 @@
 								<h3><a href="#">illum qui dolorem eum fugiat</a></h3>
 								<p>Quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum.</p>
 							</td>
-							<td class="price">$2 100.00</td>
+							<td class="price">$2100.00</td>
 							<td class="qnt"><select><option>1</option><option>1</option></select></td>
-							<td class="total">$2 100.00</td>
+							<td class="total">$2100.00</td>
 							<td class="delete"><a href="#" class="ico-del"></a></td>
 						</tr>
 						<tr>
@@ -100,18 +123,18 @@
 								<h3><a href="#">accusantium doloremque laudantium</a></h3>
 								<p>Quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum.</p>
 							</td>
-							<td class="price">$1 050.00</td>
+							<td class="price">$1050.00</td>
 							<td class="qnt"><select><option>1</option><option>1</option></select></td>
-							<td class="total">$1 050.00</td>
+							<td class="total">$1050.00</td>
 							<td class="delete"><a href="#" class="ico-del"></a></td>
 						</tr>
 					</table>
 				</div>
 
 				<div class="total-count">
-					<h4>Subtotal: $4 500.00</h4>
+					<h4>Subtotal: $4500.00</h4>
 					<p>+shippment: $30.00</p>
-					<h3>Total to pay: <strong>$4 530.00</strong></h3>
+					<h3>Total to pay: <strong>$4530.00</strong></h3>
 					<a href="#" class="btn-grey">Finalize and pay</a>
 				</div>
 		
